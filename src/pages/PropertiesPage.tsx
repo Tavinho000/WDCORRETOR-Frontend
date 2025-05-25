@@ -20,7 +20,7 @@ const PropertiesPage = () => {
 
   // 🔁 Carregar propriedades da API
   useEffect(() => {
-    axios.get("http://localhost:3000/propriedades")
+    axios.get("http://3.17.157.100:3000/propriedades")
       .then(res => setProperties(res.data))
       .catch(err => console.error("Erro ao carregar propriedades:", err));
   }, []);
