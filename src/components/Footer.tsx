@@ -8,8 +8,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="text-2xl font-bold mb-6">
-              <span className="text-rural-orange">WD</span>
-              <span className="text-white">CORRETOR</span>
+              <span className="text-rural-orange">AGRO</span>
+              <span className="text-white">SINOP RURAL</span>
             </div>
             <p className="mb-4 text-gray-300">
               Seu parceiro confiável para encontrar as melhores propriedades rurais em todo o Brasil.
