@@ -14,8 +14,8 @@ export default function Header() {
         <div className="flex items-center space-x-8">
           <Link to="/" className="flex items-center">
             <div className="text-2xl font-extrabold">
-              <span className="text-rural-orange">WD</span>
-              <span className="text-rural-green">CORRETOR</span>
+              <span className="text-rural-orange">AGRO</span>
+              <span className="text-rural-green">SINOP RURAL</span>
             </div>
           </Link>
           
