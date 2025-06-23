@@ -20,7 +20,7 @@ const PropertiesPage = () => {
 
   // 🔁 Carregar propriedades da API
   useEffect(() => {
-    axios.get("wdcorretor-backend.vercel.app/propriedades")
+    axios.get("https://wdcorretor-backend.onrender.com/propriedades")
       .then(res => setProperties(res.data))
       .catch(err => console.error("Erro ao carregar propriedades:", err));
   }, []);
