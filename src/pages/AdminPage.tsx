@@ -54,7 +54,7 @@ const AdminPage: React.FC = () => {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const response = await axios.get('http://3.17.157.100:3000/propriedades');
+        const response = await axios.get('wdcorretor-backend.vercel.app/propriedades');
         setFarms(response.data);
       } catch (error) {
         console.error("Erro ao buscar propriedades:", error);
@@ -77,7 +77,7 @@ const AdminPage: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://3.17.157.100:3000/propriedades', farmData);
+      const response = await axios.post('wdcorretor-backend.vercel.app/propriedades', farmData);
       const newFarm = response.data;
       setFarms(prev => [...prev, newFarm]);
       toast.success("Fazenda criada com sucesso!");
@@ -109,7 +109,7 @@ const AdminPage: React.FC = () => {
 
   const handleDelete = async (idToDelete: string) => {
     try {
-      await axios.delete(`http://3.17.157.100:3000/propriedades/${idToDelete}`);
+      await axios.delete(`wdcorretor-backend.vercel.app/propriedades/${idToDelete}`);
       setFarms(prev => prev.filter(farm => farm.id !== idToDelete));
       toast.success("Fazenda deletada com sucesso!");
     } catch (error) {
