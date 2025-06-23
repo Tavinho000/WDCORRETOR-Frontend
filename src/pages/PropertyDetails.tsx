@@ -20,7 +20,7 @@ const PropertyDetails = () => {
   useEffect(() => {
     if (!id) return;
     axios
-      .get(`http://3.17.157.100:3000/propriedades/${id}`)
+      .get(`wdcorretor-backend.vercel.app/propriedades/${id}`)
       .then((res) => setProperty(res.data))
       .catch(() => setProperty(null))
       .finally(() => setLoading(false));
